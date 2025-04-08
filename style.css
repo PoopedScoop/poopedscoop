@@ -614,6 +614,10 @@ header .navbar {
 
 /* Responsive Media Query Code For Max Width 640px */
 @media screen and (max-width: 640px) {
+  .hero-section .section-content {
+    padding-top: 10rem;
+  }
+
   .service-section .service-list {
     gap: 60px;
   }
@@ -634,5 +638,17 @@ header .navbar {
   .footer-section .section-content {
     flex-direction: column;
     gap: 20px;
+  }
+}
+
+/* Responsive Media Query Code For Max Width 420px */
+@media screen and (max-width: 420px) {
+  .hero-section .section-content {
+    padding-top: 10rem;
+  }
+
+  .hero-section .section-content .hero-details {
+    display: flex;
+    flex-direction: column-reverse;
   }
 }
