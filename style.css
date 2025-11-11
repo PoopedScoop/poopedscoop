@@ -472,7 +472,7 @@ header .navbar {
   color: var(--secondary-color);
 }
 
-.footer-section .policy-text .policy-link {}
+/* .footer-section .policy-text .policy-link {} */
 
 /* Responsive Media Query Code For Max Width 1024px */
 @media screen and (max-width: 1024px) {
