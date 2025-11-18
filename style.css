@@ -151,15 +151,17 @@ header .navbar {
 
 .hero-section .hero-details .title {
   font-size: var(--font-size-xxl);
-  color: var(--secondary-color);
-  font-family: "Agbalumo", sans-serif;
+  color: var(--white-color);
+  font-family: "Poppins", sans-serif;
 }
 
 .hero-section .hero-details .subtitle {
   margin-top: 8px;
   max-width: 70%;
+  color: var(--secondary-color);
   font-size: var(--font-size-xl);
   font-weight: var(--font-weight-semibold);
+  font-family: "Agbalumo", sans-serif;
 }
 
 .hero-section .hero-details .description {
