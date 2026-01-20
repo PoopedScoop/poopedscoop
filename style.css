@@ -203,6 +203,98 @@ header .navbar {
   margin-right: 30px;
 }
 
+/* Image Slider */
+.container {
+  max-width: 3200px;
+  width: 100%;
+}
+
+.image-wrapper {
+  position: relative;
+}
+
+.image-wrapper .image-button {
+  position: absolute;
+  top: 50%;
+  height: 50px;
+  width: 50px;
+  font-size: 2.5rem;
+  cursor: pointer;
+  transform: translateY(-50%);
+}
+
+.image-wrapper .image-button#prev-slide {
+  left: 0px;
+  display: none;
+}
+
+.image-wrapper .image-button#next-slide {
+  right: 0px;
+}
+
+.image-wrapper .image-list {
+  display: grid;
+  gap: 18px;
+  font-size: 0;
+  margin-bottom: 10px;
+  overflow-x: auto;
+  scrollbar-width: 3;
+  grid-template-columns: repeat(10, 1fr);
+}
+
+.image-wrapper .image-list::-webkit-scrollbar {
+  display: none;
+}
+
+.image-wrapper .image-list .image-item {
+  width: 325px;
+  height: 400px;
+  object-fit: cover;
+}
+
+.container .image-scrollbar {
+  height: 24px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.image-scrollbar .scrollbar-track {
+  height: 2px;
+  width: 100%;
+  background: #ccc;
+  position: relative;
+  border-radius: 4px;
+}
+
+.image-scrollbar:hover .scrollbar-track {
+  height: 4px;
+}
+
+.image-scrollbar .scrollbar-thumb {
+  position: absolute;
+  height: 100%;
+  width: 50%;
+  background: black;
+  border-radius: inherit;
+  cursor: grab;
+}
+
+.image-scrollbar .scrollbar-thumb:active {
+  cursor: grabbing;
+  height: 8px;
+  top: -2px;
+}
+
+.image-scrollbar .scrollbar-thumb::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -10px;
+  bottom: -10px;
+}
+
 /* About Section Styling */
 .about-section {
   padding: 120px 0;
@@ -617,7 +709,7 @@ header .navbar {
 /* Responsive Media Query Code For Max Width 640px */
 @media screen and (max-width: 640px) {
   .hero-section .section-content {
-    padding-top: 10rem;
+    padding-top: 12rem;
   }
 
   .service-section .service-list {
